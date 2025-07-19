@@ -1,0 +1,86 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #1f360a;    ;
+    color: #d4bfb4;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    line-height: 1.6;
+    font-size: 16px; 
+    margin-top: 6rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto; 
+    width: 70%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+}
+
+ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 1.2rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+li:before {
+    content: "✦";
+    color: #d4bfb4;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+footer {
+    margin-top: 5rem;
+
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+        font-size: 20px; /* Larger font size for mobile */
+    }
+    
+    .container {
+        width: 80%; /* Wider container on mobile */
+        padding: 0; /* Remove padding that might cause overflow */
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    li {
+        margin-bottom: 1.5rem; /* More space between list items on mobile */
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    body {
+        font-size: 16px; /* Adjusted for very small screens */
+        padding: 0.8rem;
+    }
+    
+    .container {
+        width: 80%;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+}
